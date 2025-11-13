@@ -104,11 +104,8 @@
 												
 											</li>
 											<li>
-												<a href="services-v1.html" title="">Services  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-												<ul class="sub-menu">
-													<li><a href="services-v1.html" title="">Services Grid</a></li>
-													<li><a href="services-v2.html" title="">Risk Management</a></li>
-												</ul><!-- /.sub-menu -->
+												<a href="services-v2.html" title="">Services  </i></a>
+												
 											</li>
 											<li>
 												<a href="portfolio-v3.html" title="">Portfolio  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -225,220 +222,258 @@
 <!-- ====================================== -->
 <!-- START: Cool Facts & Partners Section   -->
 <!-- ====================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Some Cool Facts Section</title>
 
-<section class="flat-row fact-section">
-  <div class="container">
-    <!-- ===== Heading ===== -->
-    <div class="text-center section-header">
-      <h5 class="small-title">Some Cool Facts</h5>
-      <h2 class="main-title">Numbers Speak For Themselves</h2>
+  <style>
+    /* ===== Overall Section ===== */
+    .fact-section {
+      background: #f5f8ff;
+      padding: 80px 0;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ===== Headings ===== */
+    .section-header .small-title {
+      color: #0d47a1;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .section-header .main-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #0a1b60;
+      margin-bottom: 40px;
+    }
+
+    /* ===== Stats Counter Boxes ===== */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .stat-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      padding: 30px 20px;
+      flex: 1 1 200px;
+      max-width: 220px;
+      transition: all 0.3s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .stat-box h2 {
+      font-size: 44px;
+      color: #0a1b60;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .stat-box p {
+      font-size: 15px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* ===== Partner Title ===== */
+    .partners-title h4 {
+      font-weight: 600;
+      font-size: 22px;
+      color: #0a1b60;
+      margin-bottom: 25px;
+    }
+
+    /* ===== Auto Scroll Logo Slider ===== */
+    .partner-slider {
+      height: 120px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin: auto;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 14);
+      animation: scroll 25s linear infinite;
+    }
+
+    .slide {
+      width: 250px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .slide img {
+      width: 80%;
+      max-height: 80px;
+      object-fit: contain;
+      filter: grayscale(30%);
+      transition: all 0.3s ease;
+    }
+
+    .slide img:hover {
+      filter: grayscale(0%) brightness(1.1);
+      transform: scale(1.05);
+    }
+
+    /* ===== Animation ===== */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-250px * 7)); }
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 992px) {
+      .stat-box h2 { font-size: 36px; }
+    }
+    @media (max-width: 768px) {
+      .stat-box { max-width: 45%; }
+      .slide { width: 180px; }
+    }
+    @media (max-width: 576px) {
+      .stat-box { max-width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====================================== -->
+  <!-- FACTS SECTION -->
+  <!-- ====================================== -->
+  <section class="flat-row fact-section">
+    <div class="container">
+      <!-- ===== Heading ===== -->
+      <div class="text-center section-header">
+        <h5 class="small-title">Some Cool Facts</h5>
+        <h2 class="main-title">Numbers Speak For Themselves</h2>
+      </div>
+
+      <!-- ===== Stats Counters ===== -->
+      <div class="row stats-row">
+        <div class="col-md-3 col-sm-6 stat-box">
+          <h2 class="count" data-target="318">0</h2>
+          <p>Satisfied Clients</p>
+        </div>
+        <div class="col-md-3 col-sm-6 stat-box">
+          <h2 class="count" data-target="5">0</h2>
+          <p>Years of Experience</p>
+        </div>
+        <div class="col-md-3 col-sm-6 stat-box">
+          <h2 class="count" data-target="78.6">0</h2>
+          <p>Disbursement (in Cr)</p>
+        </div>
+        <div class="col-md-3 col-sm-6 stat-box">
+          <h2 class="count" data-target="10">0</h2>
+          <p>Operational Locations</p>
+        </div>
+      </div>
+
+      <!-- ===== Partner Title ===== -->
+      <div class="text-center partners-title">
+        <h4>Our Association With</h4>
+      </div>
+
+      <!-- ===== Partner Logos Slider ===== -->
+      <div class="partner-slider">
+        <div class="slide-track">
+          <div class="slide"><img src="images/portfolio/a.png" alt="SIDBI"></div>
+          <div class="slide"><img src="images/portfolio/b.png" alt="IndusInd Bank"></div>
+          <div class="slide"><img src="images/portfolio/c.png" alt="Kotak Mahindra Bank"></div>
+          <div class="slide"><img src="images/portfolio/d.png" alt="HDFC Bank"></div>
+          <div class="slide"><img src="images/portfolio/e.png" alt="ICICI Bank"></div>
+          <div class="slide"><img src="images/portfolio/f.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/g.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/h.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/i.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/j.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/k.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/l.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/m.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/n.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/o.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/p.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/q.png" alt="Axis Bank"></div>
+          
+          <!-- repeat logos for infinite scroll -->
+          <div class="slide"><img src="images/portfolio/a.png" alt="SIDBI"></div>
+          <div class="slide"><img src="images/portfolio/b.png" alt="IndusInd Bank"></div>
+          <div class="slide"><img src="images/portfolio/c.png" alt="Kotak Mahindra Bank"></div>
+          <div class="slide"><img src="images/portfolio/d.png" alt="HDFC Bank"></div>
+          <div class="slide"><img src="images/portfolio/e.png" alt="ICICI Bank"></div>
+          <div class="slide"><img src="images/portfolio/f.png" alt="Axis Bank"></div>
+             <div class="slide"><img src="images/portfolio/g.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/h.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/i.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/j.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/k.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/l.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/m.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/n.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/o.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/p.png" alt="Axis Bank"></div>
+          <div class="slide"><img src="images/portfolio/q.png" alt="Axis Bank"></div>
+          
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- ===== Stats Counters ===== -->
-    <div class="row stats-row">
-      <div class="col-md-3 col-sm-6 stat-box">
-        <h2 class="count" data-target="318">0</h2>
-        <p>Satisfied Clients</p>
-      </div>
-      <div class="col-md-3 col-sm-6 stat-box">
-        <h2 class="count" data-target="5">0</h2>
-        <p>Years of Experience</p>
-      </div>
-      <div class="col-md-3 col-sm-6 stat-box">
-        <h2 class="count" data-target="78.6">0</h2>
-        <p>Disbursement (in Cr)</p>
-      </div>
-      <div class="col-md-3 col-sm-6 stat-box">
-        <h2 class="count" data-target="10">0</h2>
-        <p>Operational Locations</p>
-      </div>
-    </div>
-
-    <!-- ===== Partner Title ===== -->
-    <div class="text-center partners-title">
-      <h4>Our Association With</h4>
-    </div>
-
-    <!-- ===== Partner Logos Slider ===== -->
-    <div class="partner-slider">
-      <div class="slide-track">
-        <div class="slide"><img src="images/partners/sidbi.png" alt="SIDBI"></div>
-        <div class="slide"><img src="images/partners/indusind.png" alt="IndusInd Bank"></div>
-        <div class="slide"><img src="images/partners/kotak.png" alt="Kotak Mahindra Bank"></div>
-        <div class="slide"><img src="images/partners/hdfc.png" alt="HDFC Bank"></div>
-        <div class="slide"><img src="images/partners/icici.png" alt="ICICI Bank"></div>
-        <div class="slide"><img src="images/partners/axis.png" alt="Axis Bank"></div>
-
-        <!-- repeat logos for infinite scroll -->
-        <div class="slide"><img src="images/partners/sidbi.png" alt="SIDBI"></div>
-        <div class="slide"><img src="images/partners/indusind.png" alt="IndusInd Bank"></div>
-        <div class="slide"><img src="images/partners/kotak.png" alt="Kotak Mahindra Bank"></div>
-        <div class="slide"><img src="images/partners/hdfc.png" alt="HDFC Bank"></div>
-        <div class="slide"><img src="images/partners/icici.png" alt="ICICI Bank"></div>
-        <div class="slide"><img src="images/partners/axis.png" alt="Axis Bank"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ====================================== -->
-<!-- STYLES -->
-<!-- ====================================== -->
-<style>
-/* ===== Overall Section ===== */
-.fact-section {
-  background: #f5f8ff;
-  padding: 80px 0;
-  text-align: center;
-}
-
-/* ===== Headings ===== */
-.section-header .small-title {
-  color: #0d47a1;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.section-header .main-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #0a1b60;
-  margin-bottom: 40px;
-}
-
-/* ===== Stats Counter Boxes ===== */
-.stats-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 60px;
-}
-
-.stat-box {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  padding: 30px 20px;
-  flex: 1 1 200px;
-  max-width: 220px;
-  transition: all 0.3s ease;
-}
-
-.stat-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.stat-box h2 {
-  font-size: 44px;
-  color: #0a1b60;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.stat-box p {
-  font-size: 15px;
-  color: #333;
-  font-weight: 500;
-}
-
-/* ===== Partner Title ===== */
-.partners-title h4 {
-  font-weight: 600;
-  font-size: 22px;
-  color: #0a1b60;
-  margin-bottom: 25px;
-}
-
-/* ===== Auto Scroll Logo Slider ===== */
-.partner-slider {
-  height: 120px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  margin: auto;
-}
-
-.slide-track {
-  display: flex;
-  width: calc(250px * 14);
-  animation: scroll 25s linear infinite;
-}
-
-.slide {
-  width: 250px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.slide img {
-  width: 80%;
-  max-height: 80px;
-  object-fit: contain;
-  filter: grayscale(30%);
-  transition: all 0.3s ease;
-}
-
-.slide img:hover {
-  filter: grayscale(0%) brightness(1.1);
-  transform: scale(1.05);
-}
-
-/* ===== Animation ===== */
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7)); }
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 992px) {
-  .stat-box h2 { font-size: 36px; }
-}
-@media (max-width: 768px) {
-  .stat-box { max-width: 45%; }
-  .slide { width: 180px; }
-}
-@media (max-width: 576px) {
-  .stat-box { max-width: 90%; }
-}
-</style>
-
-<!-- ====================================== -->
-<!-- COUNTER ANIMATION SCRIPT -->
-<!-- ====================================== -->
-<script>
+  <!-- ====================================== -->
+  <!-- COUNTER ANIMATION SCRIPT -->
+  <!-- ====================================== -->
+  <script>
 document.addEventListener("DOMContentLoaded", function() {
   const counters = document.querySelectorAll('.count');
-  const speed = 200;
+  const speed = 100; // smaller = faster
 
-  counters.forEach(counter => {
+  const animateCounter = (counter) => {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    const isDecimal = counter.getAttribute('data-target').includes('.');
+    let count = 0;
+    const step = target / speed;
+
     const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-      const increment = target / speed;
-
+      count += step;
       if (count < target) {
-        counter.innerText = (count + increment).toFixed(0);
-        setTimeout(updateCount, 15);
+        counter.innerText = isDecimal ? count.toFixed(1) : Math.floor(count);
+        requestAnimationFrame(updateCount);
       } else {
         counter.innerText = target;
       }
     };
+    updateCount();
+  };
 
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        updateCount();
-        observer.unobserve(counter);
+  // Observe all counters separately
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        obs.unobserve(entry.target);
       }
-    }, { threshold: 0.6 });
+    });
+  }, { threshold: 0.5 });
 
-    observer.observe(counter);
-  });
+  counters.forEach(counter => observer.observe(counter));
 });
 </script>
 
@@ -565,113 +600,191 @@ document.addEventListener("DOMContentLoaded", function() {
     to { opacity: 1; transform: translateY(0); }
   }
 </style>
-  
+ <!-- ===== footer (updated alignment styles included) ===== -->
+<style>
+  /* Footer contact alignment fix - add this to your main CSS or keep inline above footer */
+  .infomation-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;               /* space between items */
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-			<footer id="footer">
-				<div class="footer-widgets">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="widget-infomation">
-									<ul class="infomation-footer">
-										<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" title="">support@themesflat.com</a></li>
-										<li><i class="fa fa-phone" aria-hidden="true"></i><a href="#" title="">+61 3 8376 6284</a></li>
-										<li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#" title="">PO Box 16122 Collins Street West Victoria 8007 Australia</a></li>
-									</ul><!-- /.infomation-footer -->
-								</div><!-- /.widget-infomation -->
-							</div><!-- /.col-md-12 -->
-						</div><!-- /.row -->
-						<div class="row widget-box">
-							<div class="col-md-4">
-								<div class="widget widget-text">
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit sed
-										do eiusmod tempor incididunt ut labore et dolore 
-											magna veniam aliqua.Ut enim ad minim veniam
-									</p>
-									<p>
-										Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in
-										voluptate 
-									</p>	
-								</div><!-- /.widget-text -->
-							</div><!-- /.col-md-4 -->
-							<div class="col-md-4">
-								<div class="widget widget-services">
-									<ul class="one-half first">
-										<li><a href="#" title="">About Us</a></li>
-										<li><a href="#" title="">Advertise</a></li>
-										<li><a href="#" title="">Terms & Conditions</a></li>
-										<li><a href="#" title="">Privacy Policy</a></li>
-										<li><a href="#" title="">Careers</a></li>
-										<li><a href="#" title="">Shop</a></li>
-									</ul><!-- /.one-half -->
-									<ul class="one-half">
-										<li><a href="#" title="">Home</a></li>
-										<li><a href="#" title="">Testimonials</a></li>
-										<li><a href="#" title="">News</a></li>
-										<li><a href="#" title="">Services</a></li>
-										<li><a href="#" title="">Corporate Client</a></li>
-									</ul><!-- /.one-half -->
-								</div><!-- /.widget-services -->
-							</div><!-- /.col-md-4 -->
-							<div class="col-md-4">
-								<div class="widget widget-subscribe">
-									<form id="subscribe-form" action="#" method="post" accept-charset="utf-8" data-mailchimp="true">
-	                                    <div id="subscribe-content">
-	    									<label for="form-email-footer">Email address:</label>
-	    									<div class="input-email">
-	    										<input type="email" name="email-form" id="subscribe-email" placeholder="Your email address" />
-	    									</div>
-	    									<button type="button" id="subscribe-button" class="button-subscribe">SUBMIT</button>
-	                                    </div>
-	                                    <div id="subscribe-msg"></div>
-									</form>
-								</div><!-- /.widget-subscribe -->
-								
-							</div><!-- /.col-md-4 -->
-						</div><!-- /.row .widget-box -->
-					</div><!-- /.container -->
-				</div><!-- /.footer-widgets -->
-				<div class="footer-bottom">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="copyright">
-									<p>Copyright 2017 Finance. Theme by <a href="#" title="">Themesflat</a></p>
-								</div>
-								<ul class="menu-footer">
-									<li><a href="#" title="">Home</a></li>
-									<li><a href="#" title="">My Blog</a></li>
-									<li><a href="#" title="">My Home</a></li>
-									<li><a href="#" title="">Sample Page</a></li>
-								</ul><!-- /.menu-footer -->
-							</div>
-						</div>
-					</div>
-				</div><!-- /.footer-bottom -->
-			</footer><!-- /#footer -->
-			
-			<div class="button-go-top">
-				<a href="#" title="" class="go-top">
-					<i class="fa fa-chevron-up"></i>
-				</a>
-			</div>
-	
-		</div> <!-- /.boxed -->
+  .infomation-footer li {
+    display: flex;
+    align-items: center;
+    gap: 10px;               /* space between icon and text */
+    white-space: nowrap;     /* keep icon + first words together on wide screens */
+    font-size: 14px;
+  }
 
-	<!-- Javascript -->
-    <script type="text/javascript" src="javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-	
-    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-    <script type="text/javascript" src="javascript/waypoints.min.js"></script>
-    <script type="text/javascript" src="javascript/main.js"></script>
+  .infomation-footer li a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+  }
 
+  .infomation-footer li i {
+    font-size: 16px;
+    color: #ffcc00;          /* icon color — adjust if needed */
+    min-width: 18px;
+    text-align: center;
+  }
 
-	</body>
+  /* Make long address wrap nicely and allow it to take more space */
+  .infomation-footer li.address a {
+    white-space: normal;     /* allow wrapping for address */
+    max-width: 720px;
+    display: inline-block;
+  }
 
-<!-- Mirrored from themesflat.co/html/finance/about-v3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Nov 2025 07:12:12 GMT -->
+  /* Tighten layout on small screens */
+  @media (max-width: 768px) {
+    .infomation-footer {
+      gap: 14px;
+    }
+    .infomation-footer li {
+      font-size: 13px;
+      gap: 8px;
+    }
+    .infomation-footer li.address a {
+      max-width: 100%;
+    }
+  }
+
+  /* Very small screens — stack contact items vertically */
+  @media (max-width: 400px) {
+    .infomation-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .infomation-footer li {
+      white-space: normal;
+    }
+  }
+
+  /* Optional: subtle hover underline on links in footer contact */
+  .infomation-footer li a:hover { text-decoration: underline; }
+</style>
+
+<footer id="footer">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="widget-infomation">
+            <ul class="infomation-footer">
+              <li class="email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:info@fggroupofcompany.com" title="Email">info@fggroupofcompany.com</a>
+              </li>
+
+              <li class="phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+919037799000" title="Call">+91 90377 99000</a>
+              </li>
+
+              <li class="address">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <a href="https://www.google.com/maps/search/FG+Group+of+Company+Perinthalmanna" title="Address" target="_blank" rel="noopener">
+                  FG Group of Company, ARUN FG Building, Perinthalmanna, Kerala, India - 679322
+                </a>
+              </li>
+            </ul><!-- /.infomation-footer -->
+          </div><!-- /.widget-infomation -->
+        </div><!-- /.col-md-12 -->
+      </div><!-- /.row -->
+
+      <div class="row widget-box">
+        <div class="col-md-4">
+          <div class="widget widget-text">
+            <p>
+              ARUN FG Group of Company is a trusted multi-domain enterprise based in Kerala,
+              offering services in finance, business consulting, and digital innovation.
+            </p>
+            <p>
+              We focus on reliability, transparency, and customer satisfaction across all sectors,
+              ensuring a long-term trusted relationship with our clients.
+            </p>
+          </div><!-- /.widget-text -->
+        </div><!-- /.col-md-4 -->
+
+        <div class="col-md-4">
+          <div class="widget widget-services">
+            <ul class="one-half first">
+              <li><a href="about-v3.html" title="">About Us</a></li>
+              <li><a href="services-v2.html" title="">Services</a></li>
+              <li><a href="#" title="">Terms & Conditions</a></li>
+              <li><a href="#" title="">Privacy Policy</a></li>
+              <li><a href="#" title="">Careers</a></li>
+              <li><a href="contact-v1.html" title="">Contact</a></li>
+            </ul><!-- /.one-half -->
+            <ul class="one-half">
+              <li><a href="index.html" title="">Home</a></li>
+              <li><a href="portfolio-v3.html" title="">Portfolio</a></li>
+              <li><a href="blog.html" title="">News</a></li>
+              <li><a href="#" title="">Testimonials</a></li>
+              <li><a href="#" title="">Corporate Clients</a></li>
+            </ul><!-- /.one-half -->
+          </div><!-- /.widget-services -->
+        </div><!-- /.col-md-4 -->
+
+        <div class="col-md-4">
+          <div class="widget widget-subscribe">
+            <form id="subscribe-form" action="#" method="post" accept-charset="utf-8" data-mailchimp="true">
+              <div id="subscribe-content">
+                <label for="form-email-footer">Email address:</label>
+                <div class="input-email">
+                  <input type="email" name="email-form" id="subscribe-email" placeholder="Your email address" />
+                </div>
+                <button type="button" id="subscribe-button" class="button-subscribe">SUBMIT</button>
+              </div>
+              <div id="subscribe-msg"></div>
+            </form>
+          </div><!-- /.widget-subscribe -->
+        </div><!-- /.col-md-4 -->
+      </div><!-- /.row .widget-box -->
+    </div><!-- /.container -->
+  </div><!-- /.footer-widgets -->
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <p>© 2025 ARUN FG Group of Company. All Rights Reserved. Designed by <a href="#" title="">Themesflat</a></p>
+          </div>
+          <ul class="menu-footer">
+            <li><a href="index.html" title="">Home</a></li>
+            <li><a href="about-v3.html" title="">About</a></li>
+            <li><a href="services-v2.html" title="">Services</a></li>
+            <li><a href="contact-v1.html" title="">Contact</a></li>
+          </ul><!-- /.menu-footer -->
+        </div>
+      </div>
+    </div>
+  </div><!-- /.footer-bottom -->
+</footer><!-- /#footer -->
+
+<div class="button-go-top">
+  <a href="#" title="" class="go-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
+
+<!-- Javascript (existing) -->
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="javascript/jquery.easing.js"></script>
+<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+<script type="text/javascript" src="javascript/waypoints.min.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+</body>
 </html>
