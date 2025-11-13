@@ -34,6 +34,87 @@
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="icon/favicon.png" rel="shortcut icon">
+	<!-- Font Awesome (for modern arrow icons) -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+  /* ------------------------------
+   Base Carousel Styling
+------------------------------ */
+.service1-flexslider {
+  margin: 50px auto;
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.service1-flexslider .service1-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service1-flexslider .service1-slides img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ------------------------------
+   Navigation Arrows (Hidden)
+------------------------------ */
+.service1-flexslider .flex-direction-nav {
+  display: none !important; /* hides both prev/next arrows */
+}
+
+/* ------------------------------
+   Control Nav (Dots)
+------------------------------ */
+.service1-flexslider .flex-control-nav {
+  bottom: 10px;
+  text-align: center;
+}
+
+.service1-flexslider .flex-control-paging li a {
+  background: rgba(255,255,255,0.4);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: background 0.3s;
+}
+
+.service1-flexslider .flex-control-paging li a.flex-active {
+  background: rgba(255,255,255,0.9);
+}
+
+/* ------------------------------
+   Responsive Adjustments
+------------------------------ */
+@media (max-width: 768px) {
+  .service1-flexslider {
+    width: 90%;
+  }
+
+  .service1-flexslider .flex-control-paging li a {
+    width: 8px;
+    height: 8px;
+  }
+}
+</style>
+
 
 </head>
 	<body>
@@ -118,7 +199,7 @@
 												<a href="services-v1.html" title="">Services  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="sub-menu">
 													<li><a href="services-v1.html" title="">Services Grid</a></li>
-													<li><a href="services-v2.html" title="">Risk Management</a></li>
+													<!-- <li><a href="services-v2.html" title="">Risk Management</a></li> -->
 												</ul><!-- /.sub-menu -->
 											</li>
 											<li>
@@ -157,12 +238,12 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="page-title-heading">
-								<h1 class="h1-title">Risk Management</h1>
+								<h1 class="h1-title">Services</h1>
 							</div><!-- /.page-title-heading -->
 							<ul class="breadcrumbs">
 								<li><a href="#" title="">Home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-								<li><a href="#" title="">Services<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-								<li><a href="#" title="">Risk Management</a></li>
+								<li><a href="#" title="">Services<i aria-hidden="true"></i></a></li>
+								<!-- <li><a href="#" title="">Risk Management</a></li> -->
 							</ul><!-- /.breadcrumbs -->
 							<div class="clearfix"></div><!-- /.clearfix -->
 						</div>
@@ -177,13 +258,16 @@
 							<div class="sidebar left">
 								<aside class="widget widget_nav_menu">
 									<div class="menu-services-container">
-										<ul class="menu  menu-tab">
-											<li><a href="#">Risk Management</a></li>
-											<li class="active"><a href="#">Accumulation</a></li>
-											<li><a href="#">Taxation</a></li>
-											<li><a href="#">Business Planning</a></li>
-											<li><a href="#">Estate Planning</a></li>
-											<li><a href="#">Home Transparent Header</a></li>											
+										<!-- <ul class="menu  menu-tab"> -->
+										<ul class="menu">
+											<li class="active"><a href="#home-loan">Home Loan</a></li>
+											<li><a href="#personal-loan">Personal Loan</a></li>
+											<li><a href="#business-loan">Business Loan</a></li>
+											<li><a href="#loan-against-property">Loan Against Property</a></li>
+											<li><a href="#car-loan">Car Loan & Commercial Vehicle Loan</a></li>
+											<li><a href="#commercial-loan">Commercial Loan</a></li>											
+											<li><a href="#project-loan">Project Loan</a></li>											
+											<li><a href="#takeover">Takeover & Top-up Loan</a></li>											
 										</ul>
 									</div>
 								</aside> <!-- /.widget_nav_menu -->
@@ -210,86 +294,188 @@
 								<div class="wrap-one-half services">
 									<div class="one-half v1">
 										<div class="box-content">
-											<div class="title">Retirement Planning</div>
-											<p>Sed facilisis lorem in orci bibendum ullamcorper.
-											Mauris vitae augue elementum, sodales nulla a,
-											semper ligula. Nullam vel enim risus. Integer rhoncus
-											hendrerit sem egestas porttitor. Integer et mi sed dolor
-											eleifend pretium quis ut velit.</p>
-											<div class="dividers dividers-bc-v1"></div>
-
-											<div class="title">Business Planning</div>
-											<p>Sed facilisis lorem in orci bibendum ullamcorper.
-											Mauris vitae augue elementum, sodales nulla a,
-											semper ligula. Nullam vel enim risus. Integer rhoncus
-											hendrerit sem egestas porttitor.</p>
-											<div class="dividers dividers-bc-v1"></div>
-
-											<div class="title">Risk Management</div>
-											<p>Sed facilisis lorem in orci bibendum ullamcorper.
-											Mauris vitae augue elementum, sodales nulla a,
-											semper ligula. </p>
-											<div class="dividers dividers-bc-v1"></div>
-
-											<ul class="flat-list">
-												<li>Work fewer hours — and make more money</li>
-												<li>Attract and retain quality, high-paying customers</li>
-												<li>Integer rhoncus hendrerit sem egestas porttitor.</li>
-												<li>Manage your time so you’ll get more done in less time</li>
-												<li>Praesent sem libero, luctus et quam iaculis.</li>
-												<li>Hone sharp leadership skills to manage your team</li>
+											<div class="title" id="home-loan">Home Loan</div>
+											<p>It is a type of loan, generally take to buying a house/flat or a plot of land for construction of a house, or renovation, extension of your existing house. This loan can get so many GOVT subsidies like PMAY and tax deduction on interest and principal amount also. We associate with public sector banks, private banks and NBFC’s to fulfil your dream home.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Maximum tenure 35yrs</li>
+												<li>Low Interest rate</li>
+												<li>Floating rate scheme</li>
+												<li>Interest and principal amount claim in income tax</li>
+												<li>Government subsidies</li>
+												<li>No part payment & pre closure charges</li>
 											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="personal-loan">Personal Loan</div>
+											<p>A personal loan is a type of unsecured loan and helps you meet your current financial needs. You don’t usually need to pledge any security or collateral while availing a personal loan and your lender provides you with the flexibility to use the funds as per your need. We help you to fulfil your urgent finance needs by provide personal loans from banks that suitable for you.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Quick funding(fund will credit within 4days)</li>
+												<li>No security required</li>
+												<li>Low EMI</li>
+												<li>Fulfil your small and urgent needs</li>
+												<li>Low processing fee</li>
+												<li>Simple documentation</li>
+											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="business-loan">Business Loan</div>
+											<p>A business loan is an unsecured form of credit designed to cover various expenditures in a business. Borrowers need not mortgage any asset to avail funds. A company may want to secure financing to maintain business operations, invest in equipment, start a new branch, or any number of other motivations.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Specially for business</li>
+												<li>Quick processing</li>
+												<li>No security required</li>
+												<li>Low EMI</li>
+												<li>Fulfil your small and urgent needs</li>
+												<li>Low processing fee</li>
+												<li>Simple documentation</li>
+											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="loan-against-property">Loan Against Property (Mortgage Loan)</div>
+											<p>It is a type of loan where, if you have an existing residential or commercial property, you have the opportunity to mortgage it with a bank to finance starting or developing a business, purchasing vehicles, or covering family occasions such as marriages. We associate with public sector banks, private banks, and NBFCs to fulfill any of your financial needs.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Use for any financial requirement</li>
+												<li>Maximum tenure 20 years</li>
+												<li>Low interest rate compared to unsecured loans</li>
+												<li>Quick processing</li>
+												<li>Maximum fund on your property</li>
+											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="car-loan">Car Loan & Commercial Vehicle Loan</div>
+											<p>A car loan is a type of loan provided to help you purchase a car. Car loans follow most of the same rules and procedures that apply to other loans. In most cases, when purchasing a car, a borrower specifically applies for a car loan. These loans are typically offered for fixed tenures, generally between 24 and 60 months. Car loans usually include various fees and taxes, which are added to the total loan amount.</p>
+											<p>Commercial vehicle loans are loans offered to borrowers — usually self-employed individuals, trusts, partnership firms, or organizations — for the purchase of vehicles used for commercial or business purposes. These loans are often availed by those involved in the transportation business.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Specially for car and commercial vehicle buyers</li>
+												<li>No security required</li>
+												<li>Low EMI</li>
+												<li>Fulfil your small and urgent needs</li>
+												<li>Low processing fee</li>
+												<li>85% funding</li>
+												<li>Simple documentation</li>
+											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="commercial-loan">Commercial Loan</div>
+											<p>A commercial loan is a type of loan generally taken to purchase commercial buildings or land, or to construct commercial properties for future income generation. It is also a type of mortgage loan, meaning the property documents are mortgaged with the bank.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Maximum tenure 20 years</li>
+												<li>Maximum funding</li>
+												<li>Floating rate scheme</li>
+												<li>Escrow account option</li>
+												<li>Low interest rate</li>
+												<li>Customized EMI</li>
+											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="project-loan">Project Loan</div>
+											<p>Project finance is the long-term financing of infrastructure and industrial projects based on the projected cash flows of the project rather than the balance sheets of its sponsors. These loans are most commonly non-recourse, meaning they are secured by the project assets and repaid entirely from the project’s cash flow, rather than from the general assets or creditworthiness of the project sponsors. The financing is typically secured by all project assets, including revenue-producing contracts.</p>
+											<p>Key Features</p>
+											<ul type="disc" class="flat-list">
+												<li>Capital Intensive Financing Scheme</li>
+												<li>Risk Allocation</li>
+												<li>Zero or Limited Recourse Financing Solution</li>
+												<li>Loan Repayment With Project Cash Flow</li>
+												<li>Multiple Participants Applicable</li>
+												<li>Better Tax Treatment</li>
+											</ul>
+											<div class="dividers dividers-bc-v1"></div>
+
+											<div class="title" id="takeover">Takeover & Top-up Loan</div>
+											<p>A takeover loan is a type of loan that allows you to transfer the balance amount of an existing loan from one financial institution to another to benefit from a lower interest rate or to add more funds to the loan. It also retains all applicable government subsidies associated with the original loan.</p>
+											<p>A top-up loan allows existing customers to borrow additional funds over and above their existing loan. The top-up functions as a new loan that completely settles the existing one, with any remaining balance disbursed to the borrower. Tax deduction benefits are available on the interest portion of the top-up loan under Section 24 of the Income Tax Act. A top-up loan can be taken on an existing home loan based on income and repayment capacity, and most banks offer such loans readily to their existing customers.</p>
+											<p>This loan option helps borrowers transfer existing loans for lower interest rates, avail additional funding, retain government subsidies, enjoy tax benefits, and experience quick processing with flexible repayment options.</p>
+
+											<div class="dividers dividers-bc-v1"></div>
+
 										</div>									
 									</div> <!-- /.one-half -->
-									<div class="one-half v2">
-										<div class="flexslider s1">
-					                        <div class="flat-slides">                            
-					                            <ul class="slides">
-					                                <li>   
-					                                    <img src="images/slides/sv1.jpg" alt="img">
-					                                </li>
-					                                
-					                                <li>
-					                                    <img src="images/slides/sv1.jpg" alt="img">
-					                                </li>
-					                            </ul> 
-					                        </div> <!-- /.flat-slides -->
-					                    </div> <!-- /.wrar-slides -->
-
-					                    <div class="flat-accordion style">
-				                            <div class="flat-toggle">
-				                                <h6 class="toggle-title active">Strategy Development</h6>
-				                                <div class="toggle-content">
-				                                    <p>Good strategy is the antidote to competition. Strategic thinking is the process of developing a strategy that defines your value proposition and your unique value chain. This process includes market and competitive research as well as an assessment of the company’s capabilities and the industry forces impacting it.</p>                               
-				                                </div>
-				                            </div><!-- /toggle -->
-
-				                            <div class="flat-toggle">
-				                                <h6 class="toggle-title">Strategic Plan Development</h6>
-				                                <div class="toggle-content">
-				                                    <p>Good strategy is the antidote to competition. Strategic thinking is the process of developing a strategy that defines your value proposition and your unique value chain. This process includes market and competitive research as well as an assessment of the company’s capabilities and the industry forces impacting it.</p>                               
-				                                </div>
-				                            </div><!-- /toggle -->
-
-				                            <div class="flat-toggle">
-				                                <h6 class="toggle-title">Strategic Plan Execution</h6>
-				                                <div class="toggle-content">
-				                                    <p>Good strategy is the antidote to competition. Strategic thinking is the process of developing a strategy that defines your value proposition and your unique value chain. This process includes market and competitive research as well as an assessment of the company’s capabilities and the industry forces impacting it.</p>                               
-				                                </div>
-				                            </div><!-- /toggle -->
-				                        </div> <!-- /.flat-accordion -->
-									</div> <!-- /.one-half -->
-									<div class="dividers dividers-bc-v2"></div>
-									<div class="box-content">
-										<div class="title">Research beyond the business plan</div>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-										<div class="dividers dividers-bc-v3"></div>									
-										<p>In your life, you may have many times facing financial issues. It’s good if you know how to handle it by yourself and have enough time to take care of it. In other cases, it’s time you get a financial consulting service. And the article below will show you those cases.</p>
-										<div class="dividers dividers-bc-v3"></div>									
-										<p>In your life, you may have many times facing financial issues. It’s good if you know how to handle it by yourself and have enough time to take care of it. In other cases, it’s time you get a financial consulting service. And the article below will show you those cases.</p>
-										<div class="dividers dividers-bc-v3"></div>									
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
 									</div>
+
+									<br><br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+
+									<br><br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+
+									<br><br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+
+									<br><br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+
+									<br><br><br><br><br><br><br><br><br><br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+
+									<br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+
+									<br><br><br><br><br>
+									
+									<div class="service1-flexslider">
+										<ul class="service1-slides">
+											<li><img src="images/slides/sv1.jpg" alt="Slide 1" style="width: 400px; height: auto;"></li>
+											<li><img src="images/slides/sv1.jpg" alt="Slide 2" style="width: 400px; height: auto;"></li>
+											<!-- <li><img src="images/slides/sv1.jpg" alt="Slide 3" style="width: 400px; height: auto;"></li> -->
+										</ul>
+									</div>
+									
+									<div class="dividers dividers-bc-v2"></div>
+									
 								</div> <!-- /.wrap-one-half -->
 							</div>
 							<div class="content-inner">
@@ -822,6 +1008,57 @@
 		</div> <!-- /.boxed -->
 
 	<!-- Javascript -->
+
+
+	<script>
+		document.querySelectorAll('a[href^="#"]').forEach(link => {
+			link.addEventListener("click", function (e) {
+			e.preventDefault();
+
+			const targetId = this.getAttribute("href");
+			const target = document.querySelector(targetId);
+
+			if (target) {
+				// Get the top position of the element
+				const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+				
+				// Calculate 10% of the viewport height
+				const offset = window.innerHeight * 0.15; // 15% below top
+				
+				// Smoothly scroll to the target minus the offset
+				window.scrollTo({
+				top: targetPosition - offset,
+				behavior: "smooth"
+				});
+			}
+			});
+		});
+	</script>
+	<!-- STEP 3: JavaScript Files and Initialization -->
+
+<!-- jQuery (required by FlexSlider) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- FlexSlider JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+
+<!-- Initialize FlexSlider -->
+<script>
+  $(window).on('load', function() {
+    $('.service1-flexslider').flexslider({
+      animation: "slide",                 // can be "fade" or "slide"
+      selector: ".service1-slides > li",  // tells FlexSlider where your slides are
+      controlNav: true,                   // dots under the slider
+      directionNav: true,                 // next/prev arrows
+      slideshowSpeed: 3000,               // 3 seconds per slide
+      animationSpeed: 600,                // slide transition speed
+      pauseOnHover: true                  // pause when mouse hovers
+    });
+  });
+</script>
+
+
+
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
