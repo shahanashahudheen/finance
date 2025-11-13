@@ -267,7 +267,7 @@
 									<div class="imagebox-desc">
  We find People who looking for loan by our Marketing team & reference by our great customers. Then our Relationship officer will contact and realize their requirement.									</div>
 									<div class="imagebox-button">
-										<a href="#" title="">read more</a>
+                <a href="https://wa.me/919539717388" target="_blank" title="Know More">Know More</a>
 									</div>
 								</div><!-- /.imagebox-content -->
 							</div><!-- /.imagebox -->
@@ -287,7 +287,7 @@
 									<div class="imagebox-desc">
   We find People who looking for loan by our Marketing team & reference by our great customers. Then our Relationship officer will contact and realize their requirement.									</div>
 									<div class="imagebox-button">
-										<a href="#" title="">read more</a>
+                <a href="https://wa.me/919539717388" target="_blank" title="Know More">Know More</a>
 									</div>
 								</div><!-- /.imagebox-content -->
 							</div><!-- /.imagebox -->
@@ -307,7 +307,7 @@
 									<div class="imagebox-desc">
 PROCESSING  We will discuss the proposal with customer and processed with bank, After that we make a continues follow up to track for smooth processing.									</div>
 									<div class="imagebox-button">
-										<a href="#" title="">learn more</a>
+                <a href="https://wa.me/919539717388" target="_blank" title="Know More">Know More</a>
 									</div>
 								</div><!-- /.imagebox-content -->
 							</div><!-- /.imagebox -->
@@ -326,7 +326,7 @@ PROCESSING  We will discuss the proposal with customer and processed with bank, 
 								<div class="imagebox-content">
 									<div class="imagebox-desc">
  After all verification, bank will disburse the amount and it makes you happy. Customer can get the best product in the market.									<div class="imagebox-button">
-										<a href="#" title="">read more</a>
+                <a href="https://wa.me/919539717388" target="_blank" title="Know More">Know More</a>
 									</div>
 								</div><!-- /.imagebox-content -->
 							</div><!-- /.imagebox -->
@@ -338,151 +338,368 @@ PROCESSING  We will discuss the proposal with customer and processed with bank, 
 			</div><!-- /.container -->
 		</section><!-- /.flat-row-imagebox -->
 
-		<section class="flat-row flat-iconbox bg-theme">
-			<div class="container">
+  <style>
+    /* ===== Loans Section Styling ===== */
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #f7f9fb;
+      margin: 0;
+      padding: 0;
+    }
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="title-section left">
-							<h2>Our Services</h2>
-						</div><!-- /.title-section -->
-					</div>
-				</div><!-- /.row -->
+    .loans-section {
+      background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+      padding: 80px 0;
+    }
 
-				<div class="row">
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+      position: relative;
+    }
 
-					<div class="col-md-4">
-						<div class="iconbox-item">
-							<div class="iconbox style1">
-								<div class="box-header">
-									<div class="icon-rounded ion-clipboard">
-										
-									</div><!-- /.icon-rounded -->
-									<div class="box-title">
-										<a href="%27#" title="">Accumulation</a>
-									</div><!-- /.box-title -->
-								</div><!-- /.box-header -->
-								<div class="box-content">
-									Donec lacinia mi rutrum sagittis
-									consequat. Donec sagittis, tellus sodales
-									sollicitudin commodo 
-								</div><!-- /.box-content -->
-							</div><!-- /.iconbox -->
-						</div><!-- /.iconbox-item -->
-					</div><!-- /.col-md-4 -->
+    /* Removed the underline */
+    .section-title::after {
+      display: none;
+    }
 
-					<div class="col-md-4">
-						<div class="iconbox-item">
-							<div class="iconbox style1">
-								<div class="box-header">
-									<div class="icon-rounded line-chart">
-										
-									</div>
-									<div class="box-title">
-										<a href="%27#" title="">Mutual Funds</a>
-									</div>
-								</div><!-- /.box-header -->
-								<div class="box-content">
-									Donec lacinia mi rutrum sagittis
-									consequat. Donec sagittis, tellus sodales
-									sollicitudin commodo 
-								</div><!-- /.box-content -->
-							</div><!-- /.iconbox -->
-						</div><!-- /.iconbox-item -->
-					</div><!-- /.col-md-4 -->
+    .section-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+    }
 
-					<div class="col-md-4">
-						<div class="iconbox-item">
-							<div class="iconbox style1">
-								<div class="box-header">
-									<div class="icon-rounded clock">
-										
-									</div>
-									<div class="box-title">
-										<a href="%27#" title="">Risk Management</a>
-									</div>
-								</div><!-- /.box-header -->
-								<div class="box-content">
-									Donec lacinia mi rutrum sagittis
-									consequat. Donec sagittis, tellus sodales
-									sollicitudin commodo 
-								</div><!-- /.box-content -->
-							</div><!-- /.iconbox -->
-						</div><!-- /.iconbox-item -->
-					</div><!-- /.col-md-4 -->
+    /* ===== Loan Boxes ===== */
+    .loan-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      padding: 40px 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+    }
 
-				</div><!-- /.row -->
+    .loan-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      border-color: #0077b6;
+    }
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="height80"></div>
-					</div>
-				</div>
+    /* ===== Icons ===== */
+    .loan-icon {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 36px;
+      transition: all 0.3s ease;
+    }
 
-				<div class="row">
-					<div class="col-md-4">
-						<div class="iconbox-item">
-							<div class="iconbox style1">
-								<div class="box-header">
-									<div class="icon-rounded magic">
-										
-									</div>
-									<div class="box-title">
-										<a href="%27#" title="">Estate Planning</a>
-									</div>
-								</div><!-- /.box-header -->
-								<div class="box-content">
-									Donec lacinia mi rutrum sagittis
-									consequat. Donec sagittis, tellus sodales
-									sollicitudin commodo 
-								</div><!-- /.box-content -->
-							</div><!-- /.iconbox -->
-						</div><!-- /.iconbox-item -->
-					</div><!-- /.col-md-4 -->
+    .loan-box:hover .loan-icon {
+      background: linear-gradient(135deg, #023e8a, #0096c7);
+      transform: rotate(10deg) scale(1.05);
+    }
 
-					<div class="col-md-4">
-						<div class="iconbox-item">
-							<div class="iconbox style1">
-								<div class="box-header">
-									<div class="icon-rounded artboard">
-										
-									</div>
-									<div class="box-title">
-										<a href="%27#" title="">Retirement Planning</a>
-									</div>
-								</div><!-- /.box-header -->
-								<div class="box-content">
-									Donec lacinia mi rutrum sagittis
-									consequat. Donec sagittis, tellus sodales
-									sollicitudin commodo 
-								</div><!-- /.box-content -->
-							</div><!-- /.iconbox -->
-						</div><!-- /.iconbox-item -->
-					</div><!-- /.col-md-4 -->
+    /* ===== Titles & Text ===== */
+    .loan-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 15px;
+    }
 
-					<div class="col-md-4">
-						<div class="iconbox-item">
-							<div class="iconbox style1">
-								<div class="box-header">
-									<div class="icon-rounded global">
-										
-									</div>
-									<div class="box-title">
-										<a href="%27#" title="">Business Planning</a>
-									</div>
-								</div><!-- /.box-header -->
-								<div class="box-content">
-									Donec lacinia mi rutrum sagittis
-									consequat. Donec sagittis, tellus sodales
-									sollicitudin commodo 
-								</div><!-- /.box-content -->
-							</div><!-- /.iconbox -->
-						</div><!-- /.iconbox-item -->
-					</div><!-- /.col-md-4 -->
-				</div><!-- /.row -->
+    .loan-desc {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
 
-			</div><!-- /.container -->
-		</section><!-- /.flat-row-iconbox -->
+    /* ===== Button ===== */
+    .btn-loan {
+      display: inline-block;
+      padding: 8px 20px;
+      color: #fff;
+      background: linear-gradient(135deg, #0077b6, #0096c7);
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-loan:hover {
+      background: linear-gradient(135deg, #023e8a, #0077b6);
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 767px) {
+      .loan-box {
+        padding: 30px 20px;
+      }
+      .loan-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+      }
+    }
+  </style>
+
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #f7f9fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .loans-section {
+      background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+    }
+
+    /* Make all loan boxes same height */
+    .loan-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    .loan-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      padding: 40px 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .loan-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      border-color: #0077b6;
+    }
+
+    .loan-icon {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 36px;
+      transition: all 0.3s ease;
+    }
+
+    .loan-box:hover .loan-icon {
+      background: linear-gradient(135deg, #023e8a, #0096c7);
+      transform: rotate(10deg) scale(1.05);
+    }
+
+    .loan-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .loan-desc {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+
+    .btn-loan {
+      display: inline-block;
+      padding: 8px 20px;
+      color: #fff;
+      background: linear-gradient(135deg, #0077b6, #0096c7);
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      align-self: center;
+    }
+
+    .btn-loan:hover {
+      background: linear-gradient(135deg, #023e8a, #0077b6);
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
+    @media (max-width: 767px) {
+      .loan-box {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+
+
+  <!-- ===== Our Loans Section ===== -->
+  <section class="flat-row flat-iconbox bg-theme loans-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mb-5">
+          <div class="title-section">
+            <h2 class="section-title">Our Loans</h2>
+            <p class="section-subtitle">Explore a range of loan options tailored to fit your needs and dreams</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loan Boxes -->
+      <div class="row loan-row">
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-home"></i></div>
+              <h4 class="loan-title">Home Loan</h4>
+              <p class="loan-desc">Buy or build your dream home with our Home Loans, offering government subsidies, low interest rates, and tax benefits.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-person"></i></div>
+              <h4 class="loan-title">Personal Loan</h4>
+              <p class="loan-desc">Get quick, collateral-free personal loans to meet your financial needs with flexible EMIs and low processing fees.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-briefcase"></i></div>
+              <h4 class="loan-title">Business Loan</h4>
+              <p class="loan-desc">Power your business growth with unsecured business loans for expansion, operations, or equipment upgrades.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-document-text"></i></div>
+              <h4 class="loan-title">Loan Against Property</h4>
+              <p class="loan-desc">Leverage your existing property to get funds for business or personal needs with low rates and long tenure.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-model-s"></i></div>
+              <h4 class="loan-title">Car & Commercial Vehicle Loan</h4>
+              <p class="loan-desc">Finance your car or commercial vehicle with up to 85% funding, low EMIs, and fast disbursal.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+
+     <div class="col-md-4 d-flex">
+  <div class="loan-box w-100">
+    <div>
+      <div class="loan-icon"><i class="fa-solid fa-building"></i>
+</i>
+</i></div>
+      <h4 class="loan-title">Commercial Loan</h4>
+      <p class="loan-desc">Buy or construct commercial properties with flexible EMIs, mortgage-backed security, and low interest rates.</p>
+    </div>
+    <a href="#" class="btn-loan">Know More</a>
+  </div>
+</div>
+
+
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-cash"></i></div>
+              <h4 class="loan-title">Project Loan</h4>
+              <p class="loan-desc">Long-term financing for infrastructure and industrial projects secured by future project cash flows.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="loan-box w-100">
+            <div>
+              <div class="loan-icon"><i class="ion-refresh"></i></div>
+              <h4 class="loan-title">Takeover & Top-up Loan</h4>
+              <p class="loan-desc">Transfer your existing loan or get additional funds at better rates with continued tax and subsidy benefits.</p>
+            </div>
+            <a href="#" class="btn-loan">Know More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Redirect Script -->
+  <script>
+    const whatsappNumber = "919539717388"; // Replace with your WhatsApp number (no + or spaces)
+    const buttons = document.querySelectorAll(".btn-loan");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", e => {
+        e.preventDefault();
+        const loanTitle = button.closest(".loan-box").querySelector(".loan-title").textContent.trim();
+        const message = `Hello! I am interested in learning more about your ${loanTitle}. Please share the details.`;
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, "_blank");
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
 
 		<section class="flat-row flat-owl-stage">
 			<div class="container">
@@ -594,151 +811,122 @@ PROCESSING  We will discuss the proposal with customer and processed with bank, 
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</section><!-- /.flat-callback -->
+<section class="flat-testimonials">
+    <div class="container">
 
-		<section class="flat-row flat-news">
-			<div class="container">
+        <div class="title-section">
+            <h2>What Our Clients Say</h2>
+        </div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="title-section left">
-							<h2>
-								Latest news
-							</h2>
-						</div><!-- /.title-section -->
-					</div>
-				</div><!-- /.row -->
+        <div class="testimonials-row">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-box">
+                <div class="testimonial-image">
+                    <img src="images/testimonials/client1.jpg" alt="Client 1">
+                </div>
+                <div class="testimonial-content">
+                    <p>"The team made the loan process so easy and fast. Highly recommend their services!"</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <h4 class="client-name">John Doe</h4>
+                    <span class="client-position">Entrepreneur</span>
+                </div>
+            </div>
 
-				<div class="row">
+            <!-- Testimonial 2 -->
+            <div class="testimonial-box">
+                <div class="testimonial-image">
+                    <img src="images/testimonials/client2.jpg" alt="Client 2">
+                </div>
+                <div class="testimonial-content">
+                    <p>"Very professional and supportive team. They guided me throughout the process."</p>
+                    <div class="testimonial-rating">★★★★☆</div>
+                    <h4 class="client-name">Jane Smith</h4>
+                    <span class="client-position">Business Owner</span>
+                </div>
+            </div>
 
-					<div class="col-md-4">
-                        <article class="post style2">
-                            <div class="featured-post">
-                                <a href="blog.html" title="" class="post-image">
-                                    <img src="images/news/large-01.jpg" alt="">
-                                </a>
-                                <ul class="post-date">
-                                    <li class="day">11</li>
-                                    <li class="month">JAN</li>
-                                </ul>
-                            </div><!-- /.featured-post -->
-                            <div class="content-post">
-                                <h4 class="title-post">
-                                    <a href="blog.html" title="">Why Do I Need To Use Financial ?</a>
-                                </h4>
-                                <div class="entry-post">
-                                    <p>Sed facilisis lorem in orci bibendum
-                                        ullamcorper. Mauris vitae augue
-                                        elementum, ...</p>
-                                </div>      
-                            </div><!-- /.content-post -->
-                        </article><!-- /.post -->
-                    </div><!-- /.col-md-4 -->
+            <!-- Testimonial 3 -->
+            <div class="testimonial-box">
+                <div class="testimonial-image">
+                    <img src="images/testimonials/client3.jpg" alt="Client 3">
+                </div>
+                <div class="testimonial-content">
+                    <p>"I got my home loan approved without any hassle. Excellent support!"</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <h4 class="client-name">Michael Lee</h4>
+                    <span class="client-position">Homeowner</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div class="col-md-4">
-                        <article class="post style2">
-                            <div class="featured-post">
-                                <a href="blog.html" title="" class="post-image">
-                                    <img src="images/news/large-02.jpg" alt="">
-                                </a>
-                                <ul class="post-date">
-                                    <li class="day">11</li>
-                                    <li class="month">JAN</li>
-                                </ul>
-                            </div><!-- /.featured-post -->
-                            <div class="content-post">
-                                <h4 class="title-post">
-                                    <a href="blog.html" title="">Why your sales forecast is off</a>
-                                </h4>
-                                <div class="entry-post">
-                                    <p>Sed facilisis lorem in orci bibendum
-                                        ullamcorper. Mauris vitae augue
-                                        elementum, ...
-                                    </p>
-                                </div>      
-                            </div><!-- /.content-post -->
-                        </article><!-- /.post -->
-                    </div><!-- /.col-md-4 -->
+    <style>
+        /* Scoped testimonial styles only */
+        .flat-testimonials .container {
+            padding: 40px 0;
+        }
 
-                    <div class="col-md-4">
-                        <div class="slidebar-news">
-                        <aside class="widget widget-recent-news">
-                            <ul class="recent-news">
-                                <li>                                    
-                                    <div class="thumb">
-                                        <span class="overlay-pop"></span>
-                                        <a href="blog.html">
-                                            <img src="images/news/image-small-01.png" alt="">
-                                        </a><!-- /.thumb --> 
-                                    </div><!-- /.row -->                                          
-                                    <div class="text">
-                                        <h4>
-                                            <a href="blog.html" title="">Why Do I Need To Use Financial ?</a>
-                                        </h4>
-                                        <div class="entry-post">
-                                            <p>January 11, 2017</p>
-                                        </div>
-                                    </div><!-- /.content-post -->                                   
-                                </li>
+        .flat-testimonials .title-section h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
-                                <li>                                    
-                                    <div class="thumb">
-                                        <span class="overlay-pop"></span>
-                                        <a href="blog.html">
-                                            <img src="images/news/image-small-02.png" alt="">
-                                        </a><!-- /.thumb --> 
-                                    </div><!-- /.row -->                                          
-                                    <div class="text">
-                                        <h4>
-                                            <a href="blog.html" title="">Why your sales forecast is off</a>
-                                        </h4>
-                                        <div class="entry-post">
-                                            <p>January 11, 2017</p>
-                                        </div>
-                                    </div><!-- /.content-post -->                                    
-                                </li>
+        .flat-testimonials .testimonials-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-                                <li>                                   
-                                    <div class="thumb">
-                                        <span class="overlay-pop"></span>
-                                        <a href="blog.html">
-                                            <img src="images/news/image-small-03.png" alt="">
-                                        </a><!-- /.thumb --> 
-                                    </div><!-- /.row -->                                          
-                                    <div class="text">
-                                        <h4>
-                                            <a href="blog.html" title="">6 tips to retain your top sales talent</a>
-                                        </h4>
-                                        <div class="entry-post">
-                                            <p>January 11, 2017</p>
-                                        </div>
-                                    </div><!-- /.content-post -->                                   
-                                </li>
+        .flat-testimonials .testimonial-box {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-                                <li>                                    
-                                    <div class="thumb">
-                                        <span class="overlay-pop"></span>
-                                        <a href="blog.html">
-                                            <img src="images/news/image-small-04.png" alt="">
-                                        </a><!-- /.thumb --> 
-                                    </div><!-- /.row -->                                          
-                                    <div class="text">
-                                        <h4>
-                                            <a href="blog.html" title="">What the martian can teach sales</a>
-                                        </h4>
-                                        <div class="entry-post">
-                                            <p>January 11, 2017</p>
-                                        </div>
-                                    </div><!-- /.content-post -->                                    
-                                </li>
-                            </ul>
-                        </aside><!-- /.widget-recent-news -->
-                        </div><!-- /.slidebar-news -->
-                    </div><!-- /.col-md-4 -->
+        .flat-testimonials .testimonial-image img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
 
-				</div><!-- /.row -->
+        .flat-testimonials .testimonial-rating {
+            color: #f5b50a;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
 
-			</div><!-- /.container -->
-		</section><!-- /.flat-news -->
+        .flat-testimonials .client-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .flat-testimonials .client-position {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media(max-width: 992px) {
+            .flat-testimonials .testimonial-box {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media(max-width: 600px) {
+            .flat-testimonials .testimonial-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</section>
+
 
 		<!-- Carousel -->
         <section class="flat-row flat-client bg-theme">
