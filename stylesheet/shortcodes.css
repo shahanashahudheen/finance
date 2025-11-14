@@ -18,7 +18,7 @@
     position: absolute;
     height: 5px;
     width: 50px;
-    background-color: #18ba60;
+    background-color: #060d92;
     bottom: 0;
     left: 0;
     border-radius: 2px;
@@ -138,7 +138,7 @@
 .imagebox.style1 .imagebox-content .imagebox-button a {
     color: #ffffff;
     margin-top: 30px;
-    background: rgba(24, 186, 96, 0.8);
+    background: rgba(8, 82, 152);
     padding: 13px 52px 13px 30px;
     display: inline-block;
     position: relative;
@@ -198,7 +198,7 @@
 }
 
 .imagebox.style2 .imagebox-content .imagebox-button a {
-    color: #18ba60;
+    color: #060d92;
     font-weight: 600;
     display: inline-block;
     position: relative;
@@ -261,7 +261,7 @@
     position: absolute;
     height: 70px;
     width: 70px;
-    background-color: #18ba60;
+    background-color: #060d92;
     border: 7px solid #ffffff;
     border-radius: 50%;
     bottom: -35px;
@@ -279,7 +279,7 @@
     opacity: 0.4;
     top: 0;
     left: 0;
-    background-color: #18ba60;
+    background-color: #060d92;
     -webkit-transform: scale(0);
        -moz-transform: scale(0);
         -ms-transform: scale(0);
@@ -366,7 +366,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #18ba60;
+    background-color: #060d92;
     width: 100%;
     height: 100%;
     opacity: 0.4;
@@ -404,7 +404,7 @@
     line-height: 24px;
     font-weight: 600;
     text-transform: capitalize;
-    color: #18ba60;
+    color: #060d92;
 }
 
 .flat-imagebox.services-grid .flat-imagebox-button a:after {
@@ -423,7 +423,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #18ba60;
+    background-color: #060d92;
     width: 100%;
     height: 100%;
     opacity: 0.4;
@@ -464,7 +464,7 @@
 }
 
 .iconbox .box-header .box-title a:hover {
-    color: #18ba60;
+    color: #060d92;
 }
 
 .iconbox .box-header .icon-rounded {
@@ -475,7 +475,7 @@
 .iconbox .box-header .icon-rounded:after {
     content: '';
     position: absolute;
-    background-color: #18ba60;
+    background-color: #060d92;
     top: 14px;
     left: -82px;
     height: 54px;
@@ -591,7 +591,7 @@
 
 .iconbox.style3 .icon-benefit {
     font-size: 60px;
-    color: #18ba60;
+    color: #060d92;
     display: inline-block;
     height: auto;
     line-height: normal;
@@ -704,7 +704,7 @@
 }
 
 .iconbox-slider .slides .item .title-post a:hover {
-    color: #18ba60;
+    color: #060d92;
 }
 
 .iconbox-slider .slides .item .category-post {
@@ -739,7 +739,7 @@
 }
 
 .iconbox-slider .slides .item .category-post a:hover {
-    color: #18ba60;
+    color: #060d92;
 }
 
 .iconbox-slider .owl-controls .owl-nav div.owl-next {
@@ -847,8 +847,8 @@
 }
 
 .flat-testimonials-post .owl-controls .owl-nav [class*=owl-]:hover {
-    border-color: #18ba60 ;
-    background: #18ba60;
+    border-color: #060d92 ;
+    background: #060d92;
 }
 
 .flat-testimonials-post .owl-controls .owl-nav div.owl-prev:hover:before, 
@@ -922,13 +922,13 @@
 }
 
 .portfolio-filter li a:hover {
-    color: #18ba60;
+    color: #060d92;
 }
 
 .portfolio-filter li a:after {
     width: 0;
     height: 3px;
-    background-color: #18ba60;
+    background-color: #060d92;
     content: "";
     left: 0;
     bottom: 0;
@@ -947,7 +947,7 @@
 .portfolio-filter li.active a:after {
     width: 100%;
     height: 3px;
-    background-color: #18ba60;
+    background-color: #060d92;
     content: "";
     left: 0;
     bottom: 0;
@@ -1062,7 +1062,7 @@
 
 .flat-portfolio .portfolio-gallery .item .title-post a:hover, 
 .flat-portfolio .portfolio-gallery .item .category-post a:hover {
-    color: #18ba60;
+    color: #060d92;
     text-decoration: underline;
 }
 
@@ -1172,7 +1172,7 @@
 }
 
 .flat-accordion.style2 .toggle-title.active {
-    background: #18ba60;
+    background: #060d92;
 }
 
 
